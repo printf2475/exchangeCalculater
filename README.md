@@ -11,7 +11,7 @@
 
 수취금액이 0보다 작은 금액이거나 10,000 USD 보다 큰 금액, 혹은 바른 숫자가 아니라면 “송금액이 바르지 않습니다"라는 에러 메시지를 보여줍니다. 메시지는 팝업, 혹은 하단에 빨간 글씨로 나타나면 됩니다.
 
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
 1. Retrofit2를 이용하여 json데이터를 받아와 사용하였습니다.
 
@@ -43,11 +43,7 @@
  
  UI
 
-![KakaoTalk_20220327_133641209_01](https://user-images.githubusercontent.com/80373743/160266852-ee06cb38-ae47-488f-bc0f-33dd89560233.jpg)
 
-![KakaoTalk_20220327_133641209](https://user-images.githubusercontent.com/80373743/160266856-b79f8197-e48f-4786-bd67-5ef486bec373.jpg)
+<img src="https://user-images.githubusercontent.com/80373743/160266852-ee06cb38-ae47-488f-bc0f-33dd89560233.jpg" width="400" height="800"/>  <img src="https://user-images.githubusercontent.com/80373743/160266856-b79f8197-e48f-4786-bd67-5ef486bec373.jpg" width="400" height="800"/>
 
-![KakaoTalk_20220327_133840331](https://user-images.githubusercontent.com/80373743/160266904-7e9dc888-f3a3-4888-897e-683bef0f470b.jpg)
-
-![KakaoTalk_20220327_133840331_01](https://user-images.githubusercontent.com/80373743/160266911-174ac687-510f-4cb7-aa4a-f9de84c3e5e8.jpg)
-
+<img src="https://user-images.githubusercontent.com/80373743/160266904-7e9dc888-f3a3-4888-897e-683bef0f470b.jpg" width="400" height="800"/>  <img src="https://user-images.githubusercontent.com/80373743/160266911-174ac687-510f-4cb7-aa4a-f9de84c3e5e8.jpg" width="400" height="800"/>
