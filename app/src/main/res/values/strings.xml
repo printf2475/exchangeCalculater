@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ExchangeApp</string>
     <string name="exchangeCalculate">환률 계산</string>
+    <string name="remittanceAmount">송금액 :</string>
+    <string name="InquiryTime">조회시간 :</string>
+    <string name="ExchangeRate">환률 :</string>
+    <string name="RecipientCountry">수취국가 :</string>
+    <string name="RemittanceCountry">송금국가 :</string>
 </resources>

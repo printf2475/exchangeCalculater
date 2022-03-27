@@ -1,6 +1,5 @@
 package com.example.exchangeapp.presentation.exchangeCalculate
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -56,7 +55,6 @@ class ExchangeCalculateViewModel(val useCases: GetUseCases) : ViewModel() {
         _recipientCountryLiveData.value = MainActivity.itemList[selectedPosition]
         CoroutineScope(Dispatchers.IO).launch {
             useCases.getExchange().onEach { exchangeRateData ->
-                Log.i("값1", exchangeRateData.quotes.toString())
 
                 if (exchangeRateData.timestamp != null) {
                     _inquiryTimeLiveData.postValue(convertTimestampToDate(exchangeRateData.timestamp))
