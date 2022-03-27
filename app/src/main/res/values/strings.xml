@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ExchangeApp</string>
+    <string name="exchangeCalculate">환률 계산</string>
+</resources>

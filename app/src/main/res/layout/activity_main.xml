@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.example.exchangeapp.presentation.exchangeCalculate.ExchangeCalculateViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.exchangeCalculate.MainActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="295dp"
+            android:layout_height="55dp"
+            android:gravity="center_horizontal"
+            android:text="@string/exchangeCalculate"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.094" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="65dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="267dp"
+            android:gravity="right"
+            android:text="송금국가 : "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        <TextView
+            android:id="@+id/tvRemittanceCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@{viewmodel.remittanceCountryLiveData}"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="65dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="267dp"
+            android:gravity="right"
+            android:text="수취국가 : "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvRecipientCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@{viewmodel.recipientCountryLiveData}"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="65dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="267dp"
+            android:gravity="right"
+            android:text="환률 : "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvExchangeRate"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="1dp"
+            android:text="@{viewmodel.exchangeRateLiveData}"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="65dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="267dp"
+            android:gravity="right"
+            android:text="조회시간 : "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvInquiryTime"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@{viewmodel.inquiryTimeLiveData}"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="65dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="267dp"
+            android:gravity="right"
+            android:text="송금액 : "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        <EditText
+            android:id="@+id/edtRemittanceAmount"
+            android:layout_width="126dp"
+            android:layout_height="22dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="right"
+            android:inputType="number"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/textView7"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvRemittanceCountry5"
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="183dp"
+            android:layout_marginEnd="47dp"
+            android:text="USD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/edtRemittanceAmount"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvExchangeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="252dp"
+            android:layout_marginEnd="267dp"
+
+            android:text="@{viewmodel.exchangeAmountLiveData}"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Spinner
+            android:id="@+id/spinnerCountrySelection"
+            android:layout_width="276dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="188dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvOutOfRangeMessege"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="40dp"
+            android:text="@{viewmodel.outOfRangeLiveData}"
+            android:textColor="#FF0000"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerCountrySelection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
